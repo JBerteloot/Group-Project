@@ -46,3 +46,118 @@ footer {
   height: 300px;
   margin-left: 100px;
 }
+
+.some-page-wrapper {
+  width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+
+}
+
+.box1 {
+width: 300px;
+height: 250px;
+background-color: rgb(235, 235, 235);
+border: 1px solid rgb(55, 55, 55);
+}
+
+.box2 {
+width: 300px;
+height: 250px;
+background-color: rgb(235, 235, 235);
+border: 1px solid rgb(55, 55, 55);
+  
+}
+
+.box3 {
+width: 300px;
+height: 250px;
+background-color: rgb(235, 235, 235);
+border: 1px solid rgb(55, 55, 55);
+}
+
+.boxtitle {
+  color: rgb(55, 55, 55);
+  height: 40px;
+  width:280px;
+  margin-left: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(184, 184, 184, 0.5);
+}
+
+.box1header {
+  display: flex;
+}
+
+.boxheadertitle {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+.address {
+  font-size: 10px;
+  color: rgb(55, 55, 55);
+  text-align: center;
+  padding-top: 20px;
+
+
+}
+
+.headerdate {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+.box1news {
+  font-size: 13px;
+  padding:20px;
+  color: rgb(55, 55, 55);
+}
+
+.ribeyeimg {
+  width: 275px;
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 20px;
+
+
+}
+
+.ribeyename {
+  font-size: 13px;
+  color: rgb(55, 55, 55);
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.ribeyedescription {
+  font-size: 13px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 18px;
+  color: rgb(55, 55, 55);
+
+}
+
+.map {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.contact {
+  font-size: 10px; 
+  padding-top:20px;
+  color: rgb(55, 55, 55);
+  text-align: center;
+}

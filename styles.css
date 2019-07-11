@@ -1,0 +1,48 @@
+html{box-sizing: border-box; font-family:sans-serif; }
+*, *::before, *::after {box-sizing:inherit;}
+
+body {
+  background: grey;
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: blue;
+  width: 1000px;
+  height: 300px;
+  margin-left: 100px;
+}
+
+nav {
+  border: solid aqua;
+  width: 200px;
+  height: 300px;
+}
+
+.menu {
+  position: absolute;
+  margin-left: -100px;
+}
+
+
+main {
+  background-color: red;
+  width: 1000px;
+  height: 800px;
+  margin-left: 100px;
+  
+}
+
+#foodpics {
+  background-color:yellow;
+  width: 250px;
+  height: 700px;
+}
+
+footer {
+  background-color:green;
+  width: 1000px;
+  height: 300px;
+  margin-left: 100px;
+}

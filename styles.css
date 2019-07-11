@@ -1,4 +1,4 @@
-html{box-sizing: border-box; font-family:sans-serif; }
+html{box-sizing: border-box; font-family: sans-serif; }
 *, *::before, *::after {box-sizing:inherit;}
 
 body {
@@ -7,6 +7,43 @@ body {
   margin: auto;
 }
 
+nav {
+  position: fixed;
+  border: solid aqua;
+  width: 200px;
+  height: 300px;
+  margin-left: -100px;
+}
+
+nav ul {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  color: #697069;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+nav ul li i {
+  font-size: 20px;
+  color: #C15C0C;
+  padding-right: 15px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  background: #428CE1;
+}
+
+
+
+
+
 header {
   background-color: blue;
   width: 1000px;
@@ -14,31 +51,92 @@ header {
   margin-left: 100px;
 }
 
-nav {
-  border: solid aqua;
-  width: 200px;
-  height: 300px;
-}
 
-.menu {
-  position: absolute;
-  margin-left: -100px;
-}
 
 
 main {
   background-color: red;
   width: 1000px;
-  height: 800px;
+  height: auto;
   margin-left: 100px;
-  
+}
+
+#tab-pics {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+
+}
+
+#tabs {
+  width: 800px;
+  height: 500px;
+  border: solid white;
 }
 
 #foodpics {
   background-color:yellow;
   width: 250px;
-  height: 700px;
+  height: auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
+
+#foodpics div {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#foodpics h1 {
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+#food1 {
+  background-image: url("Images/Salumi-Formaggi\ Platter.jpg");
+  background-size: 100%;
+  background-position: 40% 98%;
+  background-repeat: no-repeat;
+}
+
+#food2 {
+  background-image: url("Images/Brick\ Oven\ Salmon\ Oreganato.jpg");
+  background-size: 100%;
+  background-position: 40% 150%;
+  background-repeat: no-repeat;
+}
+
+#food3 {
+  background-image: url("Images/200z.\ Bone-In\ Rib\ Eye.jpg");
+  background-size: 110%;
+  background-position: 97% 90%;
+  background-repeat: no-repeat;
+}
+
+#food4 {
+  background-image: url("Images/Tiramisu.jpg");
+  background-size: 100%;
+  background-position: 40% 35%;
+  background-repeat: no-repeat;
+}
+
+#food5 {
+  background-image: url("Images/Oreo\ Zeppole.jpg");
+  background-size: 150%;
+  background-position: 40% 150%;
+  background-repeat: no-repeat;
+}
+
+#food6 {
+  background-image: url("Images/Strawberry\ Shortcake.jpg");
+  background-size: 150%;
+  background-position: 40% 150%;
+  background-repeat: no-repeat;
+}
+
 
 footer {
   background-color:green;

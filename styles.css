@@ -53,18 +53,7 @@ main {
   margin-left: 100px;
 }
 
-#tab-pics {
-  display: flex;
-  flex-direction: row;
-  padding-top: 50px;
-}
 
-#tabs {
-  width: 800px;
-  height: 500px;
-  border: solid white;
-  display: flex;
-}
 
 article {
   border: solid orange;
@@ -76,10 +65,12 @@ article {
 #foodpics {
   background-color:yellow;
   width: 250px;
-  height: auto;
+  height: 1500px;
   padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  top: -1020px;
+  right: -720px;
+  
 }
 
 #foodpics div {
@@ -134,10 +125,10 @@ article {
   background-size: 150%;
   background-position: 40% 150%;
   background-repeat: no-repeat;
-}
+} 
 
 
-footer {
+ footer {
   background-color:green;
   width: 1000px;
   height: 300px;
@@ -258,3 +249,122 @@ border: 1px solid rgb(55, 55, 55);
   color: rgb(55, 55, 55);
   text-align: center;
 }
+
+.tabs {
+  height:500px;
+  width: 600px;
+  background-color: aqua;
+}
+
+
+.food {
+  height: 500px;
+  width: 250px;
+  background-color: yellow;
+  
+}
+
+
+ #tabs {
+  width: 800px;
+  height: 500px;
+  border: solid white;
+  display: flex;
+} 
+
+.information {
+ margin-top: 40px;
+ width: 700px;
+ height: 1000px;
+ background-color: azure;
+}
+
+.infotabs {
+ display: flex;
+}
+
+#infotab1 {
+  height: 40px;
+  width: 100px;
+  background-color: rgb(149, 192, 50);
+}
+
+#infotab2 {
+  height: 40px;
+  width: 100px;
+  background-color: gray;
+}
+
+#infotab3 {
+  height: 40px;
+  width: 100px;
+  background-color: blueviolet;
+}
+
+#infotab1.show {
+  height: 40px;
+  width: 100px;
+  background-color: rgb(149, 192, 50);
+}
+
+#infotab2.show {
+  height: 40px;
+  width: 100px;
+  background-color: gray;
+}
+
+#infotab3.show {
+  height: 40px;
+  width: 100px;
+  background-color: blueviolet;
+}
+
+#info1 {
+  height: 600px;
+  width: 700px;
+  background-color:white;
+  z-index: 2; 
+}
+
+#info1.show {
+  height: 600px;
+  width: 700px;
+  background-color:rgb(149, 192, 50);
+  z-index: 4;
+}
+
+#info2 {
+  height: 0px;
+  width: 0px;
+  background-color: white; 
+  visibility: hidden;
+}
+
+#info2.show {
+  height: 600px;
+  width: 700px;
+  position: relative;
+  top: -600px;
+  z-index: 3;
+  background-color:gray;
+  visibility: visible;
+}
+
+#info3 {
+  height:0px;
+  width: 0px;
+  background-color: white;
+  visibility: hidden;
+}
+
+#info3.show {
+  height:600px;
+  width: 700px;
+  background-color: blueviolet;
+  position: relative;
+  top: -600px;
+  visibility: visible;
+}
+
+
+

@@ -7,25 +7,33 @@
   <title>Team 4_weekend</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="https://kit.fontawesome.com/4c329a7eb8.js"></script>
+  <a href="https://disqus.com/?ref_noscript"></a>
 </head>
 <body>
-  <container>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  
+  
       <nav>
         <ul>
-          <li><a href="#"></a><i class="fas fa-store-alt"></i>Our Story</li>
-          <li><a href="#"></a><i class="fas fa-book-open"></i>Menu</li>
-          <li><a href="#"></a><i class="fas fa-utensils"></i>Reservation</li>
+          <li id="nourstory"><a href="#"></a><i class="fas fa-store-alt"></i>Our Story</li>
+          <li id="nmenu"><a href="#"></a><i class="fas fa-book-open"></i>Menu</li>
+          <li id="nreservation"><a href="#"></a><i class="fas fa-utensils"></i>Reservation</li>
         </ul>
       </nav>
   <header>
     <div id="social"></div>
-    <!--Logo, big picture, nav on the left-->
+    
     
   </header>
   
   
 
   <main>
+    
     <div class='some-page-wrapper'>
       <div class='row'>
         <div class='column'>
@@ -61,17 +69,87 @@
           </div>
         </div>
 
-  <section id="tab-pics">
-    <div id="tabs"> <!--tabs-->
-      <div id="story">Our story</div>
-        <article></article>
-      <div id="menu">Menu</div>
-      <article></article>
-      <div id="rezzy">Reservation</div>
-      <article></article>
-    </div>
+      
+        <div class="information">
+          <div class="infotabs">
+            <div id="infotab1">Our Story</div>
+            <div id="infotab2">Menu</div>
+            <div id="infotab3">Reservations</div>
+          </div>
+          <div id="info1"><div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum? Tempore ex necessitatibus quas repudiandae at expedita eaque commodi et quo dolor. Hic consectetur nam, nulla quam magni sapiente eius.</p>
+              <img src=“http://placeholder.it” width=“800px”/>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem reprehenderit alias, rem obcaecati similique blanditiis, impedit nostrum odio fuga deserunt, iusto ipsum voluptates! Perspiciatis quaerat ea iure omnis non!</p>
+            </div></div>
+          
+          
+          
+          
+          
+          
+          <div id="menulist">Our Dinner Selection
+            <div id="info2"><div class=“course”>Appetizers
+              <div class=“item” id=“apps”>
+                 <!--
+                 <p class=“name”>NAME</p>
+                 <p class=“price”>(PRICE)</p>
+                 <p class=“description”>DESCRIPTION</p>
+                 <div id=“extra”>Icons
+                     <i id=“hot” class=“fas fa-pepper-hot”></i>
+                     <a id=“Veg”>&#x24E5;<a>
+                     <img src=“Images/gluten-free.svg” id=“GF” />
+                 </div>
+                 -->
+               </div>
+             </div>
+           </div>
+           <div class=“course”>Entrees
+             <div class=“item” id=“entrees” >
+               <!--
+                 <p class=“name”>NAME</p>
+                 <p class=“price”>(PRICE)</p>
+                 <p class=“description”>DESCRIPTION</p>
+                 <div id=“extra”>Icons
+                     <i id=“hot” class=“fas fa-pepper-hot”></i>
+                     <a id=“Veg”>&#x24E5;<a>
+                     <img src=“Images/gluten-free.svg”/>
+                 </div>
+                 -->
+             </div>
+           </div>
+           <div class=“course”>Desserts
+             <div class=“item” id=“desserts”>
+               <!--
+               <p class=“name”>NAME</p>
+               <p class=“price”>(PRICE)</p>
+               <p class=“description”>DESCRIPTION</p>
+               <div id=“extra”>Icons
+                   <i id=“hot” class=“fas fa-pepper-hot”></i>
+                   <a id=“Veg”>&#x24E5;<a>
+                   <img src=“Images/gluten-free.svg”/>
+               </div>
+               -->
+             </div></div>
+          </div>
+          <div id="info3"><div id=“form”>
+              <form>
+                <label for=“name”>Full Name</label>
+                <input type=“text” name=“name” class=“emptyfield” placeholder=“Jane Smith”>
+                <label for=“guestsnumber”>Number of Guests</label>
+                <input type=“tell” name=“guestsnumber” class=“emptyfield” placeholder=“Max 10”>
+                <label for=“notes”>Special Notes</label>
+                <textarea text=“text” name=“notes” class=“emptyfield” rows="8" placeholder=“Celebrating something? Let us know about special celebration or any other information to help is make your dinning experience the best”></textarea>
+                <select name=“seating” class=“picklist”>
+                    <option value=“in”>Indoor</option>
+                    <option value=“out”>Outdoor</option>
+                    <option value=“patio”>Covered Patio</option>
+                </select>
+                <button type=“submit”>Reserve Table</button>
+              </form>
+            </div></div>
+        </div>
 
-    <div id="foodpics"> <!--food pics-->
+    <div id="foodpics"> 
       <h1>Our fine plates..</h1>
       <div id="food1"></div>
       <div id="food2"></div>      
@@ -80,12 +158,40 @@
       <div id="food5"></div>
       <div id="food6"></div>
     </div>
-  </section>
+
+    <div id="disqus_thread"></div>
+    <script>
+    
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    
+    // var disqus_config = function () {
+    // // this.page.url = timon.restaurant;  // Replace PAGE_URL with your page's canonical URL variable
+    
+    // this.page.identifier = ; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    // };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://timonrestaurant.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+   
   </main>
   <footer>
 
     </footer>
-  </container>
+
+
+  
 </body>
 
 

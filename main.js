@@ -1,0 +1,1 @@
+$('#viewVoters').css('overflow','visible');

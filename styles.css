@@ -1,48 +1,76 @@
-html{box-sizing: border-box; font-family:sans-serif; }
+html{ box-sizing: border-box; font-family:sans-serif; }
 *, *::before, *::after {box-sizing:inherit;}
 
-body {
-  background: grey;
-  width: 1200px;
-  margin: auto;
-}
 
-header {
-  background-color: blue;
-  width: 1000px;
-  height: 300px;
-  margin-left: 100px;
-}
-
-nav {
-  border: solid aqua;
-  width: 200px;
-  height: 300px;
-}
-
-.menu {
-  position: absolute;
-  margin-left: -100px;
+body
+{
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat; 
+    
 }
 
 
-main {
-  background-color: red;
-  width: 1000px;
-  height: 800px;
-  margin-left: 100px;
-  
+nav 
+{ 
+    float: right;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    margin-right: 48px;
+
+    
 }
 
-#foodpics {
-  background-color:yellow;
-  width: 250px;
-  height: 700px;
+
+nav > a
+
+
+
+{   
+    padding: 15px;
+
+    
 }
 
-footer {
-  background-color:green;
-  width: 1000px;
-  height: 300px;
-  margin-left: 100px;
+header
+{
+    display: flex;
+    justify-content: space-between;
+    
+
 }
+
+hr 
+{   
+    
+    
+    margin-bottom: 40px;
+}
+
+
+.image
+{    
+    background-repeat: no-repeat;
+    display:flex;
+    width: 1200px; 
+    height:500px;
+justify-content: center top;
+    line-height:700px;
+    margin:0px auto;
+    vertical-align: center;
+    margin-left: centered;
+    border: 1px solid blue;
+    top: 100%;
+    
+}
+.restaurant1 {
+     
+    
+    margin: auto;
+   
+}
+

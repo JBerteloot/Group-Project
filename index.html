@@ -10,30 +10,28 @@
   <a href="https://disqus.com/?ref_noscript"></a>
 </head>
 <body>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-  
-  
-      <nav>
-        <ul>
-          <li id="nourstory"><a href="#"></a><i class="fas fa-store-alt"></i>Our Story</li>
-          <li id="nmenu"><a href="#"></a><i class="fas fa-book-open"></i>Menu</li>
-          <li id="nreservation"><a href="#"></a><i class="fas fa-utensils"></i>Reservation</li>
-        </ul>
-      </nav>
+  <nav>
+    <ul>
+      <li id="nourstory"><a href="#"></a><i class="fas fa-store-alt"></i>Our Story</li>
+      <li id="nmenu"><a href="#"></a><i class="fas fa-book-open"></i>Menu</li>
+      <li id="nreservation"><a href="#"></a><i class="fas fa-utensils"></i>Reservation</li>
+    </ul>
+  </nav>
+
   <header>
-    <div id="social"></div>
-    
-    
+    <div id="logo-social">
+      <div id="logo"> LOGO </div> 
+      <div id="social"> 
+          <i class="fab fa-facebook-square" id="FB"><a href="www.facebook.com" target="_blank"></a></i>
+          <i class="fab fa-instagram" id="IG"><a href="#" target="_blank"></a></i>
+          <i class="fab fa-twitter" id="TW"><a href="#" target="_blank"></a></i>
+          <img src="Images/opentable.png" alt="opentable" id="OT"><a href="#" target="_blank"></a></img>
+      </div>
+    </div>
+    <div id="headerpic"></div>
   </header>
-  
-  
 
   <main>
-    
     <div class='some-page-wrapper'>
       <div class='row'>
         <div class='column'>
@@ -44,120 +42,127 @@
               <div class=headerdate><strong>July 11</strong></div>
             </div>
             <div class="box1news">So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward. Thrown any behind afford either the set depend one temper. Instrument melancholy in acceptance collecting frequently be if.</div>
-       
           </div>
         </div>
-      <div class='column'>
+        <div class='column'>
           <div class='box2'>
             <div class="boxtitle">Today's Special</div>
             <img class="ribeyeimg" src="https://static1.squarespace.com/static/533c5e18e4b0a32be0b63187/5499cefee4b064cadc019d45/5499d063e4b0d325eaf86e58/1419366500489/Ribeye.jpg" alt="Ribye"/>
             <div class="ribeyename"><strong>20oz. Bone-In Rib Eye</strong>............................58</div>
             <div class="ribeyedescription"> A delicious ribeye that will make you rethink your life. Cut from the most pampered cows on the planet!</div>
           </div>
-
-            
         </div>
-      <div class='column'>
-        <div class='box3'>
-          <div class="boxtitle">Our Location</div>
-          <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.336428363762!2d-115.15474388472806!3d36.15836708008585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab25d5fd5%3A0x8a76a578cf778310!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1562883101889!5m2!1sen!2sus" width="260" height="100" frameborder="0" style="border:1px solid rgb(55, 55, 55)" allowfullscreen></iframe></div>
-          <div class="address">1112 S Casino Center Blvd, Las Vegas, NV 89104</div>
-          <div class="contact">555-117-5555 555-117-5555 Map Directions</div>
+        <div class='column'>
+          <div class='box3'>
+            <div class="boxtitle">Our Location</div>
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.336428363762!2d-115.15474388472806!3d36.15836708008585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab25d5fd5%3A0x8a76a578cf778310!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1562883101889!5m2!1sen!2sus" width="260" height="100" frameborder="0" style="border:1px solid rgb(55, 55, 55)" allowfullscreen></iframe></div>
+            <div class="address">1112 S Casino Center Blvd, Las Vegas, NV 89104</div>
+            <div class="contact">555-117-5555 555-117-5555 Map Directions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--TABS and Pictures on the left-->
+    <div id="information-Pics">
+      <!--TABS with LINKS-->
+      <div class="information">
+        <div class="infotabs">
+          <div id="infotab1">Our Story</div>
+          <div id="infotab2">Menu</div>
+          <div id="infotab3">Reservations</div>
+        </div>
+        <!--Info 1-->
+        <div id="info1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum? Tempore ex necessitatibus quas repudiandae at expedita eaque commodi et quo dolor. Hic consectetur nam, nulla quam magni sapiente eius.</p>
+            <img src="Images/kitchen.png"/>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem reprehenderit alias, rem obcaecati similique blanditiis, impedit nostrum odio fuga deserunt, iusto ipsum voluptates! Perspiciatis quaerat ea iure omnis non!</p>
+        </div>
+        <!--Info2 - Menu API-->
+        <div id="info2">
+          <div id="menulist">
+            <h1>Our Dinner Selection...</h1>
+            <!--Appetizers--> 
+            <div class="course">
+              <h2>Appetizers</h2>
+              <div class="item" id="apps">
+                <!--
+                <p class="name">NAME</p>
+                <p class="price">(PRICE)</p>
+                <p class="description">DESCRIPTION</p>
+                <div id="extra">Icons
+                    <i id="hot" class="fas fa-pepper-hot"></i>
+                    <a id="veg">&#x24E5;<a>
+                    <img src="Images/gluten-free.svg" id=""F" />
+                </div>
+                -->
               </div>
             </div>
           </div>
-        </div>
-
+          <!--Entrees-->
+          <div class="course">
+            <h2>Entrees</h2>
+            <div class="item" id="entrees" >
+              <!--
+                <p class="name">NAME</p>
+                <p class="price">(PRICE)</p>
+                <p class="description">DESCRIPTION</p>
+                <div id="extra">Icons
+                    <i id="hot" class="fas fa-pepper-hot"></i>
+                    <a id="veg">&#x24E5;<a>
+                    <img src="Images/gluten-free.svg"/>
+                </div>
+                -->
+            </div>
+          </div>
+          <!--Desserts-->
+          <div class="course">
+            <h2>Desserts</h2>
+            <div class="item" id="desserts">
+              <!--
+              <p class="name">NAME</p>
+              <p class="price">(PRICE)</p>
+              <p class="description">DESCRIPTION</p>
+              <div id="extra">Icons
+                  <i id="hot" class="fas fa-pepper-hot"></i>
+                  <a id="veg">&#x24E5;<a>
+                  <img src="Images/gluten-free.svg"/>
+              </div>
+              -->
+            </div>
+          </div>
+        </div> <!--Info2 Closing-->
+        <div id="info3">
+          <div id="form">
+            <form>
+              <label for="name">Full Name</label>
+              <input type="text" name="name" class="emptyfield" placeholder="Jane Smith">
+              <label for="guestsnumber">Number of Guests</label>
+              <input type="tell" name="guestsnumber" class="emptyfield" placeholder="Max 10">
+              <label for="notes">Special Notes</label>
+              <textarea text="text" name="notes" class="emptyfield" rows="8" placeholder="Celebrating something? Let us know about special celebration or any other information to help is make your dinning experience the best"></textarea>
+              <select name="seating" class="picklist">
+                  <option value="in">Indoor</option>
+                  <option value="out">Outdoor</option>
+                  <option value="patio">Covered Patio</option>
+              </select>
+              <button type="submit">Reserve Table</button>
+            </form>
+          </div> <!--Form closing-->
+        </div> <!--Info3 Closing-->
+      </div> <!--Information closing-->
       
-        <div class="information">
-          <div class="infotabs">
-            <div id="infotab1">Our Story</div>
-            <div id="infotab2">Menu</div>
-            <div id="infotab3">Reservations</div>
-          </div>
-          <div id="info1"><div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum? Tempore ex necessitatibus quas repudiandae at expedita eaque commodi et quo dolor. Hic consectetur nam, nulla quam magni sapiente eius.</p>
-              <img src=“http://placeholder.it” width=“800px”/>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem reprehenderit alias, rem obcaecati similique blanditiis, impedit nostrum odio fuga deserunt, iusto ipsum voluptates! Perspiciatis quaerat ea iure omnis non!</p>
-            </div></div>
-          
-          
-          
-          
-          
-          
-          <div id="menulist">Our Dinner Selection
-            <div id="info2"><div class=“course”>Appetizers
-              <div class=“item” id=“apps”>
-                 <!--
-                 <p class=“name”>NAME</p>
-                 <p class=“price”>(PRICE)</p>
-                 <p class=“description”>DESCRIPTION</p>
-                 <div id=“extra”>Icons
-                     <i id=“hot” class=“fas fa-pepper-hot”></i>
-                     <a id=“Veg”>&#x24E5;<a>
-                     <img src=“Images/gluten-free.svg” id=“GF” />
-                 </div>
-                 -->
-               </div>
-             </div>
-           </div>
-           <div class=“course”>Entrees
-             <div class=“item” id=“entrees” >
-               <!--
-                 <p class=“name”>NAME</p>
-                 <p class=“price”>(PRICE)</p>
-                 <p class=“description”>DESCRIPTION</p>
-                 <div id=“extra”>Icons
-                     <i id=“hot” class=“fas fa-pepper-hot”></i>
-                     <a id=“Veg”>&#x24E5;<a>
-                     <img src=“Images/gluten-free.svg”/>
-                 </div>
-                 -->
-             </div>
-           </div>
-           <div class=“course”>Desserts
-             <div class=“item” id=“desserts”>
-               <!--
-               <p class=“name”>NAME</p>
-               <p class=“price”>(PRICE)</p>
-               <p class=“description”>DESCRIPTION</p>
-               <div id=“extra”>Icons
-                   <i id=“hot” class=“fas fa-pepper-hot”></i>
-                   <a id=“Veg”>&#x24E5;<a>
-                   <img src=“Images/gluten-free.svg”/>
-               </div>
-               -->
-             </div></div>
-          </div>
-          <div id="info3"><div id=“form”>
-              <form>
-                <label for=“name”>Full Name</label>
-                <input type=“text” name=“name” class=“emptyfield” placeholder=“Jane Smith”>
-                <label for=“guestsnumber”>Number of Guests</label>
-                <input type=“tell” name=“guestsnumber” class=“emptyfield” placeholder=“Max 10”>
-                <label for=“notes”>Special Notes</label>
-                <textarea text=“text” name=“notes” class=“emptyfield” rows="8" placeholder=“Celebrating something? Let us know about special celebration or any other information to help is make your dinning experience the best”></textarea>
-                <select name=“seating” class=“picklist”>
-                    <option value=“in”>Indoor</option>
-                    <option value=“out”>Outdoor</option>
-                    <option value=“patio”>Covered Patio</option>
-                </select>
-                <button type=“submit”>Reserve Table</button>
-              </form>
-            </div></div>
-        </div>
-
-    <div id="foodpics"> 
-      <h1>Our fine plates..</h1>
-      <div id="food1"></div>
-      <div id="food2"></div>      
-      <div id="food3"></div>      
-      <div id="food4"></div>
-      <div id="food5"></div>
-      <div id="food6"></div>
+      <div id="foodpics"> 
+        <h1>Our fine plates..</h1>
+        <div id="food1"></div>
+        <div id="food2"></div>      
+        <div id="food3"></div>      
+        <div id="food4"></div>
+        <div id="food5"></div>
+        <div id="food6"></div>
+      </div>
     </div>
+
 
     <div id="disqus_thread"></div>
     <script>
@@ -190,8 +195,12 @@
 
     </footer>
 
-
-  
+    <!--JS and JQ Scripts-->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 

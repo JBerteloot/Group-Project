@@ -13,8 +13,10 @@ $(document).ready(() => {
       $("#info1").removeClass("show")
       $("#info3").removeClass("show")
       $("#info2").addClass("show")
+      $("#infotab2").addClass("show")
       $("#infotab1").removeClass("show")
       $("#infotab3").removeClass("show")
+
   })
 
   $("#nreservation").on('click', e => {
@@ -24,6 +26,7 @@ $(document).ready(() => {
       $("#info3").addClass("show")
       $("#infotab2").removeClass("show")
       $("#infotab1").removeClass("show")
+      $("#infotab3").addClass("show")
   })
 
 $.get("https://obscure-tundra-54269.herokuapp.com/fine-dining", function(data) {

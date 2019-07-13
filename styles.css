@@ -1,8 +1,13 @@
 html{box-sizing: border-box; font-family: sans-serif; }
 *, *::before, *::after {box-sizing:inherit;}
 
+.timonlogo {
+  height:250px;
+  width: 250px;
+  padding-bottom: 25px;
+}
+
 body {
-  background: grey;
   width: 1200px;
   margin: auto;
 }
@@ -44,6 +49,7 @@ header {
   width: 1000px;
   height: auto;
   margin-left: 100px;
+  margin-bottom: 0px;
 }
 
 #logo-social {
@@ -53,6 +59,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 #social {
@@ -103,18 +110,11 @@ header {
 }
 
 main {
-  background-color: red;
+  
   width: 1000px;
   height: auto;
   margin-left: 100px;
 }
-
-
-
-
-
-
-
 
 .some-page-wrapper {
   padding-top: 50px;
@@ -134,34 +134,34 @@ main {
 .box1 {
 width: 300px;
 height: 250px;
-background-color: rgb(235, 235, 235);
-border: 1px solid rgb(55, 55, 55);
+background-color: #428CE1;
+border: 3px solid #697069;
 }
 
 .box2 {
 width: 300px;
 height: 250px;
-background-color: rgb(235, 235, 235);
-border: 1px solid rgb(55, 55, 55);
+background-color: #C15C0C;
+border: 3px solid #697069;
   
 }
 
 .box3 {
 width: 300px;
 height: 250px;
-background-color: rgb(235, 235, 235);
-border: 1px solid rgb(55, 55, 55);
+background-color: #428CE1;
+border: 3px solid #697069;
 }
 
 .boxtitle {
-  color: rgb(55, 55, 55);
+  color: #17363A;
   height: 40px;
   width:280px;
   margin-left: 10px;
   font-size: 15px;
   padding-left: 10px;
   padding-top: 10px;
-  border-bottom: 1px solid rgba(184, 184, 184, 0.5);
+  border-bottom: 1px solid #dfd2c1;
 }
 
 .box1header {
@@ -176,9 +176,9 @@ border: 1px solid rgb(55, 55, 55);
 
 .address {
   font-size: 10px;
-  color: rgb(55, 55, 55);
   text-align: center;
   padding-top: 20px;
+  color: #17363A;
 
 
 }
@@ -187,12 +187,13 @@ border: 1px solid rgb(55, 55, 55);
   padding-left: 20px;
   padding-top: 20px;
   font-size: 13px;
+  color: #17363A;
 }
 
 .box1news {
   font-size: 13px;
   padding:20px;
-  color: rgb(55, 55, 55);
+  color: #17363A;
 }
 
 .ribeyeimg {
@@ -206,7 +207,7 @@ border: 1px solid rgb(55, 55, 55);
 
 .ribeyename {
   font-size: 13px;
-  color: rgb(55, 55, 55);
+  color: #17363A;
   padding-left: 20px;
   padding-top: 10px;
 }
@@ -216,7 +217,7 @@ border: 1px solid rgb(55, 55, 55);
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 18px;
-  color: rgb(55, 55, 55);
+  color: #17363A;
 }
 
 .map {
@@ -227,13 +228,13 @@ border: 1px solid rgb(55, 55, 55);
 .contact {
   font-size: 10px; 
   padding-top:20px;
-  color: rgb(55, 55, 55);
+  color: #17363A;
   text-align: center;
 }
 
 #information-Pics {
   margin-top: 50px;
-  border: solid black;
+  
   width: 1000px;
   display: flex;
   flex-direction: row;
@@ -241,10 +242,10 @@ border: 1px solid rgb(55, 55, 55);
 }
 
 .information {
- padding-top: 40px;
+ padding-top: 0px;
  width: 700px;
  height: auto;
- background-color: azure;
+
 }
 
 .infotabs {
@@ -252,52 +253,86 @@ border: 1px solid rgb(55, 55, 55);
 }
 
 #infotab1 {
-  height: 40px;
-  width: 100px;
-  background-color: rgb(149, 192, 50);
+  height: 50px;
+  width: 200px;
+  background-color: #dfd2c1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding:15px 0px 0px 20px;
+  color: #17363A;
+
+  
 }
 
 #infotab2 {
-  height: 40px;
-  width: 100px;
-  background-color: gray;
+  height: 50px;
+  width: 200px;
+  background-color: #428ce1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding:15px 0px 0px 80px;
+  color: #17363A;
 }
 
 #infotab3 {
-  height: 40px;
-  width: 100px;
-  background-color: blueviolet;
+  height: 50px;
+  width: 200px;
+  background-color: #dfd2c1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding:15px 0px 0px 85px;
+  color: #17363A;
+
 }
 
 #infotab1.show {
-  height: 40px;
-  width: 100px;
-  background-color: rgb(149, 192, 50);
+  height: 50px;
+  width: 200px;
+  background-color: #dfd2c1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding:15px 0px 0px 20px;
+  border-bottom: 2px solid #17363A;
+  color: #17363A;
 }
 
 #infotab2.show {
-  height: 40px;
-  width: 100px;
-  background-color: gray;
+  height: 50px;
+  width: 200px;
+  background-color: #428ce1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding:15px 0px 0px 80px;
+  border-bottom: 2px solid #17363A;
+  color: #17363A;
 }
 
 #infotab3.show {
-  height: 40px;
-  width: 100px;
-  background-color: blueviolet;
+  height: 50px;
+  width: 200px;
+  background-color: #dfd2c1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding:15px 0px 0px 85px;
+  border-bottom: 2px solid #17363A;
+  color: #17363A;
+  
 }
 
 #info1 {
   height: 600px;
   width: 700px;
-  background-color:white;
+  background-color:#dfd2c1;
   z-index: 2; 
+  position: relative;
+  top: -16px;
+  color: #17363A;
 }
 
 #info1.show {
   height: 600px;
   width: 700px;
-  background-color:rgb(149, 192, 50);
+  background-color:#dfd2c1;
   z-index: 4;
 }
 
@@ -306,7 +341,7 @@ border: 1px solid rgb(55, 55, 55);
 }
 
 #info1 p:nth-child(1) {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 #info1 img {
@@ -317,7 +352,7 @@ border: 1px solid rgb(55, 55, 55);
 #info2 {
   height: 0px;
   width: 0px;
-  background-color: white; 
+  background-color: #428ce1; 
   visibility: hidden;
 }
 
@@ -325,9 +360,9 @@ border: 1px solid rgb(55, 55, 55);
   height: 2200px;
   width: auto;
   position: relative;
-  top: -600px;
+  top: -643px;
   z-index: 3;
-  background-color:gray;
+  background-color:#428ce1;
   visibility: visible;
 }
 
@@ -345,10 +380,13 @@ border: 1px solid rgb(55, 55, 55);
 #info3.show {
   height:600px;
   width: auto;
-  background-color: blueviolet;
+  background-color: #dfd2c1;
   position: relative;
-  top: -600px;
+  top: -642px;
   visibility: visible;
+  z-index: 6;
+  
+  
 }
 
 h1 {
@@ -449,7 +487,8 @@ button {
 }
 
 #foodpics {
-  background-color:yellow;
+  background-color:#dfd2c1;
+  border: 3px solid #697069;
   width: 250px;
   height: auto;
   padding-bottom: 50px;

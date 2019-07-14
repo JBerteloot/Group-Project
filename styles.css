@@ -365,14 +365,18 @@ border: 3px solid #697069;
 }
 
 #info2.show {
-  height: 2200px;
-  width: auto;
+  height: 1735px;
+  width: 700px;
   position: relative;
   top: -643px;
   z-index: 3;
   background-color:#428ce1;
   visibility: visible;
 }
+
+
+
+
 
 #menulist {
   height: auto;
@@ -407,24 +411,42 @@ h1 {
 }
 
 .course {
-  border: solid green;
+ background-color: rgb(221, 210, 195, .5);
+ /* opacity: .5; */
+ height: 550px;
+ padding-left: 150px;
+ padding-right: 20px;
 }
 
 h2{
-  padding: 15px;
-  font-size: 20;
+  padding: 0px;
+  font-size: 25px;
   margin: 0px;
-  margin-left: 30px;
+  margin-left: -120px;
+}
+
+.appheader {
+  display: flex;
+}
+
+.see {
+  font-size: 20px;
+  padding-left: 500px;
+}
+
+.Appetize {
+  position: relative;
+  top: 70px;
 }
 
 .item { 
   font-size: 14px;
-  border: solid orange;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   width: 700px;
+  padding-right:100px;
 }
 
 .item .name {
@@ -446,12 +468,12 @@ h2{
 }
 
 .item .description {
-  padding-left: 10px;
+  padding-left: 20px;
   flex-grow: 3;
 }
 
 #extra a {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .item img {
@@ -498,14 +520,15 @@ button {
   background-color:#dfd2c1;
   border: 3px solid #697069;
   width: 250px;
-  height: auto;
+  height: 1500px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  
+  
 }
 
-#foodpics div {
+#foodpics > .foodpicscontainer div {
   width: 200px;
   height: 200px;
   margin: 20px;

@@ -16,6 +16,7 @@ $(document).ready(() => {
       $("#infotab2").addClass("show")
       $("#infotab1").removeClass("show")
       $("#infotab3").removeClass("show")
+     
 
   })
 
@@ -28,6 +29,38 @@ $(document).ready(() => {
       $("#infotab1").removeClass("show")
       $("#infotab3").addClass("show")
   })
+
+  $("#infotab3").on('click', e => {
+    $("#info3").addClass("show")
+    $("#info2").removeClass("show")
+    $("#info1").removeClass("show")
+    $("#info3").addClass("show")
+    $("#infotab2").removeClass("show")
+    $("#infotab1").removeClass("show")
+    $("#infotab3").addClass("show")
+})
+
+$("#infotab2").on('click', e => {
+    $("#info2").addClass("show")
+    $("#info1").removeClass("show")
+    $("#info3").removeClass("show")
+    $("#info2").addClass("show")
+    $("#infotab2").addClass("show")
+    $("#infotab1").removeClass("show")
+    $("#infotab3").removeClass("show")
+})
+
+$("#infotab1").on('click', e => {
+    $("#info1").addClass("show")
+    $("#info2").removeClass("show")
+    $("#info3").removeClass("show")
+    $("#infotab1").addClass("show")
+    $("#infotab2").removeClass("show")
+    $("#infotab3").removeClass("show")
+})
+
+
+
 
 $.get("https://obscure-tundra-54269.herokuapp.com/fine-dining", function(data) {
   renderMenu(data)
@@ -45,9 +78,10 @@ function renderMenu(data) {
     let appHTML =  `
       <div class="item">
         <p class="name">${app.name}</p>
-        <p class="price">$${app.price}</p>
+        <p class="price">${app.price}</p><br>
+        <p class="extra">${spicy}${veggy}${gf}</p>
         <p class="description">${app.description}</p>
-        <p class="extra">${spicy}${veggy}${gf}
+
       </div>
       `  
     return appHTML
@@ -67,9 +101,9 @@ function renderMenu(data) {
     let mainHTML = `
       <div class="item">
         <p class="name">${main.name}</p>
-        <p class="price">$${main.price}</p>
+        <p class="price">${main.price}</p><br>
+        <p class="extra">${spicy}${veggy}${gf}</p>
         <p class="description">${main.description}</p>
-        <p class="extra">${spicy}${veggy}${gf}
       </div>
  `
     return mainHTML
@@ -87,9 +121,9 @@ function renderMenu(data) {
     let sweetsHTML = `
       <div class="item">
         <p class="name">${sweets.name}</p>
-        <p class="price">$${sweets.price}</p>
+        <p class="price">${sweets.price}</p><br>
+        <p class="extra">${spicy}${veggy}${gf}</p>
         <p class="description">${sweets.description}</p>
-        <p class="extra">${spicy}${veggy}${gf}
       </div>
  `  
   return sweetsHTML

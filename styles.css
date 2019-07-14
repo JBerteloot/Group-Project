@@ -41,7 +41,10 @@ nav ul li i {
 
 nav ul li:hover {
   cursor: pointer;
-  background: #428CE1;
+  background: rgb(66, 140, 225, .5);
+  border-radius: 10px;
+  width: 160px;
+  
 }
 
 header {
@@ -256,6 +259,10 @@ border: 3px solid #697069;
 
 }
 
+#info1 p {
+  padding-right: 10px;
+}
+
 .infotabs {
  display: flex;
 }
@@ -285,7 +292,7 @@ border: 3px solid #697069;
 #infotab3 {
   height: 50px;
   width: 200px;
-  background-color: #dfd2c1;
+  background-color: #697069;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   padding:15px 0px 0px 85px;
@@ -318,7 +325,7 @@ border: 3px solid #697069;
 #infotab3.show {
   height: 50px;
   width: 200px;
-  background-color: #dfd2c1;
+  background-color: #697069;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   padding:15px 0px 0px 85px;
@@ -328,7 +335,7 @@ border: 3px solid #697069;
 }
 
 #info1 {
-  height: 600px;
+  height: 750px;
   width: 700px;
   background-color:#dfd2c1;
   z-index: 2; 
@@ -338,7 +345,7 @@ border: 3px solid #697069;
 }
 
 #info1.show {
-  height: 600px;
+  height: 750px;
   width: 700px;
   background-color:#dfd2c1;
   z-index: 4;
@@ -368,7 +375,7 @@ border: 3px solid #697069;
   height: 1735px;
   width: 700px;
   position: relative;
-  top: -643px;
+  top: -793px;
   z-index: 3;
   background-color:#428ce1;
   visibility: visible;
@@ -385,16 +392,16 @@ border: 3px solid #697069;
 #info3 {
   height:0px;
   width: 0px;
-  background-color: white;
+  background-color: #697069;
   visibility: hidden;
 }
 
 #info3.show {
-  height:600px;
+  height:750px;
   width: auto;
-  background-color: #dfd2c1;
+  background-color: #697069;
   position: relative;
-  top: -642px;
+  top: -793px;
   visibility: visible;
   z-index: 6;
   

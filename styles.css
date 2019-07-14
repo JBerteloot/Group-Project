@@ -45,7 +45,6 @@ nav ul li:hover {
 }
 
 header {
-  background-color: aquamarine;
   width: 1000px;
   height: auto;
   margin-left: 100px;
@@ -54,7 +53,6 @@ header {
 
 #logo-social {
   width: 1000px;
-  border: solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -65,16 +63,15 @@ header {
 #social {
   width: auto;
   height: 100px;
-  border: solid yellow;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 10px;
+  
 }
 
 #social i {
   font-size: 40px;
-  padding: 15px;
+  padding: 5px;
 }
 
 #FB {
@@ -90,14 +87,16 @@ header {
 }
 
 #social img {
-  width: 100px;
+  width: 80px;
+  height: 60px;
   padding: 0px;
+  position: relative;
+  left: -20px;
 }
 
 #logo {
   width: 400px;
   height: 200px;
-  border: solid green;
 }
 
 #headerpic {
@@ -196,12 +195,21 @@ border: 3px solid #697069;
   color: #17363A;
 }
 
-.ribeyeimg {
+/* .ribeyeimg {
   width: 275px;
   height: 100px;
   padding-top: 20px;
   padding-left: 20px;
+} */
 
+.ribeyepic {
+  width: 250px;
+  height: 85px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-image: url(ribeye.jpg);
+  background-position-y: -70px;
+  background-position-x: -30px;
 
 }
 
@@ -552,9 +560,11 @@ button {
 } 
 
 footer {
-  background-color:green;
+
+  
   width: 1000px;
-  height: 300px;
+  height: 20px;
   margin-left: 100px;
+  border-bottom: 2px solid #697069;
 }
 

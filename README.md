@@ -1,3 +1,8 @@
+Check out the final demo for this project at https://jberteloot.github.io/Group-Project/
+
+
+
+
 | Team1     | Team2     |  Team3    |  Team4    | 
 | ----------| ----------|-----------|-----------|
 | Jacob     | Geoffrey  | Malina    | Jamie     |
